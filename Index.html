@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - Ali Lahia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!------------Entete-------------->
+    <header id="Accueil" class="entete">
+        <div class="global hero">
+
+            <!--Navigation-->
+            <label id="burger" for="chk-burger">  
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=888" width="32" height="32">
+                </label> <input type="checkbox" name="chk-burger" id="chk-burger">  
+            <nav id="menu">
+            <a href="#Accueil">Accueil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#articles">Articles</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#vidéo">Vidéo</a>
+            <a href="#pied">Info</a>
+            <a href="#epreuve_finale">Épreuve Finale</a>
+            </nav>
+            <!--Fin de Navigation-->
+
+            <!--Début de Écriture + Texte-->
+            <section class="écriture">
+             <div class="texte">
+              <h1>Valorant</h1>
+               <div class="paragraphe">
+                <p>Auteure: Ali Lahia</p>
+                <p>Techniques d'intégration multimédia - 582-1W1 - Mise en page Web  </p>
+                <p>Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
+                <p id="GitHub"><a href="https://github.com/AliLahia">Lien GitHub Pages</a></p>
+               </div>
+             </div>
+             <!--Début d'Images-->
+             <img id="logo" src="img/Valorant.png" alt="Logo">
+            </section>
+
+        </div>
+    </header>
+
+    <!------------Inscription-------------->
+    <section id="inscription">
+        <div class="global">
+            <h2>Bienvenue dans Valorant</h2> 
+            <p id="description">Inscrivez-vous pour rejoindre notre communauté</p>
+            <!--Début de Général-->
+                <form class="formulaire">
+                    <fieldset> <Legend>Obligatoire :</Legend>
+                <section class="Personnel">
+                    <div>
+                     <label for="nom">Nom</label>
+                     <input id="nom" type="text" placeholder="Entrez votre nom">
+                    </div>
+                    <div>
+                        <label for="prenom">Prenom</label>
+                        <input id="prenom" type="text" placeholder="Entrez votre prenom">
+                    </div>
+                    <div>
+                        <label for="courriel">Courriel</label>
+                        <input id="courriel" type="text" placeholder="Entrez votre courriel">
+                    </div>
+                </section>
+                    </fieldset>
+                
+            <!--Fin de Général-->    
+
+            <!--Début de Sexe-->
+         <fieldset class="Sexe">
+            <legend>Sexe :</legend>
+            <div class="sexe">
+            <label>
+                <input type="radio" name="sexe" value="homme" required> Homme
+            </label>
+            <label>
+                <input type="radio" name="sexe" value="femme"> Femme
+            </label>
+            </div>
+         </fieldset>
+             <!--Fin de Sexe-->
+
+             <!--Début de Préférences-->
+         <fieldset class="Preferences">
+            <legend>Préférences :</legend>
+            <div class="preferences">
+            <label>
+                <input type="checkbox" name="preferences[]" value="newsletter"> Être informé par courriel
+            </label>
+            <label>
+                <input type="checkbox" name="preferences[]" value="promotions"> Être informé par téléphone
+            </label>
+            <label>
+                <input type="checkbox" name="preferences[]" value="event"> Ne pas être informé
+            </label>
+            </div>
+        </fieldset>
+        <!--Fin de Préférences-->
+
+        <!--Début de Région-->
+        <label id="Arme" for="arme">Arme :</label>
+        <select id="arme" name="arme" required>
+            <option value="">-- Sélectionnez votre arme de première manche --</option>
+            <option value="classic">Classic</option>
+            <option value="shorty">Shorty</option>
+            <option value="frenzy">Frenzy</option>
+            <option value="ghost">Ghost</option>
+            <option value="sheriff">Sheriff</option>
+        </select>
+
+        <div id="reinitialiser">
+            <button type="button" onclick="location.reload()">Actualiser</button>
+        </div>
+        </div>
+    </form>
+    </section>
+
+    <!------------Tableau-------------->
+    <section id="tableau">
+        <div class="global">
+            <h2>Le Meilleur Jeu</h2>
+            <p id="description">Il y a plusieurs détails importants 
+                à savoir à propos de Valorant:</p>
+            <table class="Ooc">
+                <thead>
+                    <tr>
+                        <th>Statistiques</th>
+                        <th>Description</th>
+                        <th>Valeur minimum</th>
+                        <th>Maximum possible</th>
+                        <th>Commentaires</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Agents disponibles</td>
+                        <td>Nombre d'agents jouables avec des compétences uniques</td>
+                        <td>10</td>
+                        <td>Illimitée</td>
+                        <td>Les nouveaux agents élargissent les stratégies possibles.</td>
+                    </tr>
+                    <tr>
+                        <td>Cartes actives</td>
+                        <td>Nombre de cartes jouables disponibles en rotation officielle</td>
+                        <td>4</td>
+                        <td>Illimitée</td>
+                        <td>Les cartes sont parfois retirées ou remaniées (comme Bind et Split) pour garder le jeu dynamique et compétitif.</td>
+                    </tr>
+                    <tr>
+                        <td>Taille des équipes</td>
+                        <td>Nombre de joueurs par équipe dans un match</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>Une taille fixe de 5 joueurs par équipe favorise la coordination stratégique.</td>
+                    </tr>
+                    <tr>
+                        <td>Rounds par partie</td>
+                        <td>Nombre de rounds nécessaires pour terminer une partie standard</td>
+                        <td>13</td>
+                        <td>37</td>
+                        <td>Les parties prolongées offrent plus de suspense.</td>
+                    </tr>
+                    <tr>
+                        <td>Popularité</td>
+                        <td>Nombre de joueurs actifs mensuellement</td>
+                        <td>3 millions</td>
+                        <td>+20 millions</td>
+                        <td>La popularité de Valorant continue de croître.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Statistique-->
+        </div>
+    </section>
+
+    <!------------Articles-------------->
+    <section id="articles">
+        <div class="global">
+            <h2>Les Secrets d'Abyss</h2>
+            <p id="description">Abyss cache des choses...</p>
+
+             <!--Reyna-->
+             <article class="article">
+                <figure class="article__figure">
+                <img id="reyna" src="img/Reyna.png" alt="Reyna" width="40px">
+                <figcaption id="caption">Reyna</figcaption>   
+                </figure>
+                <p class="article__p">Originaire du cœur du Mexique, Reyna est une experte des combats singuliers
+                     qui se renforce à chaque élimination qu'elle réussit. 
+                     Son efficacité n'est limitée que par son habileté, 
+                     ce qui la rend très dépendante de ses propres performances.
+                </p>
+            </article>
+    
+            <article class="article">
+                <figure class="article__figure">
+                <img id="omen" src="img/Omen.png" alt="Omen" width="40px">
+                <figcaption id="caption">Omen</figcaption>
+                </figure>
+                <p class="article__p"> Omen, fantôme d'un souvenir, 
+                    chasse dans l'ombre. 
+                    Il rend ses ennemis aveugles, se téléporte à travers le champ de bataille, 
+                    puis laisse la paranoïa prendre le dessus 
+                    tandis que son ennemi se démène pour savoir où il pourrait frapper ensuite.</p>
+            </article>
+    
+            <article class="article">
+                <figure class="article__figure">
+                <img src="img/Jett.png" alt="Jett" width="60px">
+                <figcaption id="caption">Jett</figcaption>    
+            </figure>
+            <p class="article__p">
+                Représentant son pays d'origine, la Corée du Sud, 
+                le style de combat agile et évasif de Jett lui permet de prendre des risques 
+                que personnee d'autre ne peut prendre. Elle tourne en rond autour de chaque escarmouche, 
+                coupant les ennemis avant même qu'ils ne sachent ce qui les a frappés.</p>
+            </article>
+        </div>
+    </section>
+
+    <!------------Galerie-------------->
+    <section id="galerie">
+        <div class="global">
+            <h2>Quelques images d'agents</h2>
+            <p id="description">Les images suivantes viennent du jeu Valorant et reprèsentent
+                les personnages jouables du jeu.</p>
+            <galerie class="Images">
+                    <img class="img" src="img/Brimstone.png" alt="Brimstone-AOC">
+                    <img class="img" src="img/Sypher.png" alt="Sypher-AOC">
+                    <img class="img" src="img/Fade.png" alt="Fade-AOC">
+                    <img class="img" src="img/Chamber.png" alt="Chamber-AOC">
+                    <img class="img" src="img/Harbor.png" alt="Harbor-AOC">
+                    <img class="img" src="img/Kayo.png" alt="Kayo-AOC">
+                    <img class="img" src="img/Sova.png" alt="Sova-AOC">
+                    <img class="img" src="img/Yoru.png" alt="Yoru-AOC">
+                    <img class="img" src="img/Phoenix.png" alt="Phoenix-AOC">
+                    <img class="img" src="img/Breach.png" alt="Breach-AOC">
+            </galerie>
+        </div>
+    </section>
+
+    <!------------Vidéo-------------->
+    <section id="vidéo">
+        <div class="global">
+            <h2>Le Début d'une Histoire</h2>
+            <p id="description">Le trailer suivant a été attendu avec impatience par tout les
+                joueurs et fans de ce jeu.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=btpWg1gDXIE&pp=ygUXdHJhaWxlciB2YWxvcmFudCByZWNlbnQ%3D"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!------------Footer-------------->
+    <footer id="pied" class="pied">
+        <div class="global">
+            <h2>Info</h2>
+        </div>
+    </footer>
+
+    <!------------Épreuve Finale-------------->
+    <section id="Examen">
+        <div class="global">
+            <div class="menu_recherche">
+                <nav class="navigation">
+                  <a href="#Examen">Accueil</a>
+                  <a href="#Accueil">Section-1</a>
+                  <a href="#inscription">Section-2</a>
+                  <a href="#tableau">Section-3</a>
+                  <a href="#articles">Section-4</a>
+                  <a href="#galerie">Info</a>
+                </nav>
+            </div>
+ 
+            <div class="texte-photo-hero">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+                rel="stylesheet">
+           
+             <div class="texte-hero">
+            <h2 id="Exam">Horizon</h2>
+ 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <p id="debut">Chaque destination, une nouvelle passion.</p>
+            <p>
+                Club Horizon est un club de voyage unique qui propose à ses membres
+                des destinations variées et adaptées à tous les styles.
+                Que vous rêviez d’une escapade culturelle, d’une aventure sportive,
+                d’un séjour zen, d’une expérience aquatique, ou d’un voyage en famille,
+                nous avons une offre pour chaque passion. Rejoignez-nous pour explorer
+                le monde à votre rythme et selon vos envies !
+            </p>
+            <button id="btn-inscription">Inscription</button>
+            <div class="img">
+                <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=1f1" width="32" height="32" alt="Facebook">
+                <img src="https://s2.svgbox.net/social.svg?ic=github&color=1f1" width="32" height="32" alt="GitHub">
+                <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=1f1" width="32" height="32" alt="Instagram">
+                <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=1f1" width="32" height="32" alt="Stackoverflow">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=1f1" width="32" height="32" alt="Linkedin">
+            </div>
+            <div class="bas">
+                <p>Club Horizon | 3800 Sherbrooke est | 514-254-7131
+                    Auteur: Ali Lahia | 1W1 - Mise en page web | Épreuve Finale
+                    &copy; 2024 - TIM Maisonneuvea
+                </p>
+            </div>
+            
+             </div>
+                <img src="img/voyage.png" alt="voyage" width="270px" height="auto">
+            </div>
+        </div>
+    </section>

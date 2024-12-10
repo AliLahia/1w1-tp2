@@ -1,0 +1,406 @@
+/*Base General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+.pied {
+    background-color: rgb(255, 0, 0);
+}
+.entete {
+    background-color: rgb(8, 5, 105);
+}
+
+.global {
+    min-height: 100vh;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, .5);
+    margin: 0 auto;
+}
+body > section:nth-of-type(1) {
+    background-color: hsl(243 85.08% 53.5%);
+}
+body > section:nth-of-type(2) {
+    background-color: hsl(173.77, 100%, 59.43%);
+}
+body > section:nth-of-type(3) {
+    background-color: hsl(126.69, 100%, 57.92%);
+}
+body > section:nth-of-type(4) {
+    background-color: hsl(57.46, 71.29%, 64.87%);
+}
+body > section:nth-of-type(5) {
+    background-color: hsl(320, 42%, 27%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#description{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+}
+/*Fin de Base General*/
+
+/*Début de Accueil*/
+#logo {
+    width: 350px;
+    height: auto;
+    padding-left: 10px;
+}
+/*Entete*/
+/*Navigation*/
+#burger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    z-index: 9;
+    background-color: rgb(255, 0, 0);
+}
+
+#menu {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: flex-start;
+     gap: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    transition: transform .25s;
+    transform: translateX(250px);
+    width: 200px;
+    height: 400px;
+    padding: 10px;
+    padding-left: 40px;
+    z-index: 1;
+}
+ 
+#menu a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ 
+#chk-burger {
+    display: none;
+    width: 200px;
+    border: 2px solid rgb(241, 35, 35);
+    padding: 10px;
+}
+#chk-burger:checked + #menu {
+    transform: translateX(0);
+}
+/*Fin de Navigation*/
+
+/*Écriture*/
+.texte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 25px;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* ou une police similaire */
+    font-size: 48px;
+    font-style: italic;
+    flex-wrap: wrap;
+    color: #b5b3a8;
+}
+
+.paragraphe {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 27px;
+    font-size: 13px;
+}
+
+p a {
+    color: #4eafc0;
+}
+p a:hover {
+    color: #3e92a1;
+}
+/*Fin de Écriture*/
+
+/*Fin de Accueil*/
+h2 {
+    padding: 10px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 30px;
+   font-style: italic;
+   color: #000000;
+}
+/*Début de Inscription*/
+
+/*Formulaire (L'encadrement pour tout les formulaires*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    width: 300px;
+}
+/*Fin de Formulaire*/
+/*Début de Obligatoire*/
+.Personnel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+/*Fin de Obligatoire*/
+/*Début de Sexe*/
+.Sexe/*Le truc autour d'homme et femme*/ {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.sexe/*Homme et femme*/ {
+    display: flex;
+    justify-content: space-between;
+}
+/*Fin de Sexe*/
+/*Début de Preferences*/
+.Preferences {
+    width: 625px;
+}
+.preferences {
+    display: flex;
+    gap: 12px;
+}
+/*Fin de Preferences*/
+/*Début de Région*/
+#région {
+    margin-bottom: 10px;
+}
+/*Fin de Région*/
+/*Fin de Inscription*/
+
+/*Début de Tableau*/
+table {
+    border-collapse: collapse;
+    margin: 100px auto; /* Centrer le tableau et ajouter de l'espace en haut/bas */
+    width: 90%;
+    background-color: #1b1b2f;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+table, th, td {
+    border: 1px solid #3a3a5c;
+}
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+th {
+    background-color: hsl(251, 49%, 24%);
+    color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: hsl(252, 43%, 18%);
+}
+tr:nth-child(odd) {
+    background-color: hsl(251, 52%, 32%);
+}
+tr:hover {
+    background-color: hsl(251, 49%, 40%);
+    color: #ffffff;
+}
+/*Fin de Tableau
+
+/*Début d'Articles*/
+/*Début d'Articles*/
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    padding-top: 30px;
+}
+.article__p {
+    padding-top: 20px;
+    line-height: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*Décoration des Images*/
+.article:nth-of-type(even)  .article__figure {
+    order: 2;
+}
+.article__figure {
+    transform : scale(.95) translateX(-2%);
+    transition : transform .25s, filter .25s;
+    filter:grayscale(1) blur(1px);
+    padding-right: 15px;
+  }
+  .article__figure:hover {
+    transform : scale(1.5) translateX(0);
+    filter:grayscale(0) blur(0);
+  }
+  #sword {
+    margin-left: 25px;
+}
+  #korogus {
+    margin-left: 5px;
+}
+  #caption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  /*Fin d'Articles*/
+
+  /*Début de Galerie*/
+  .Images {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-left: 45px;
+}
+.Images img:hover {
+    transform: scale(2.5);
+}
+.Images img {
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+}
+.img {
+    width: 80px;
+}
+#preview {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #1329ee; /* Pour visualiser le conteneur */
+}
+#preview img {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*Fin de Galerie*/
+
+/*Début de Vidéo*/
+iframe {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+/*Début de l'Examen*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(48, 94%, 62%);
+}
+nav a:hover {
+    color: white;
+}
+ 
+/*Écriture*/
+p {
+    font-family: 'Poppins', sans-serif; /* Applique "Poppins" spécifiquement au paragraphe */
+    font-size: 16px; /* Ajuste la taille de la police si nécessaire */
+    line-height: 1.5; /* Améliore la lisibilité */
+}
+ 
+/*Photo et Texte*/
+.texte-photo-hero p {
+    flex: 1;
+}
+.texte-photo-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 35px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+}
+.texte-photo-hero img {
+    max-width: 290px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    box-shadow: -2px 0px 25px black;
+ 
+}
+ 
+/*Fin de Photo et Texte*/
+ 
+/*Début de Texte*/
+.texte-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 500px;
+    flex: 1 1 500px;
+    padding-left: 65px;
+    flex-wrap: nowrap;
+}
+.texte-hero h2 {
+    font-family: 'Passion One', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: hsl(48, 94%, 62%);
+    text-shadow: 1px 1px 0px rgb(255, 140, 0);
+    padding-left: 80px;
+}
+.texte-hero #debut {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: hsl(48, 94%, 62%);
+    margin: 0;
+    padding-left: 20px;
+}
+.texte-hero p {
+    font-size: 14px;
+}
+.texte-hero-bas p {
+    font-size: 14px;
+    color: hsl(48, 94%, 62%);
+}
+/*Bouton*/
+#btn-inscription {
+    display: flex;
+    padding: 10px 25px;
+    margin-left: 100px;
+    font-family: 'Poppins', sans-serif; /* Assurez-vous que la police est cohérente */
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(50, 122, 36);
+    background: linear-gradient(45deg, #e3c364, #e4b646, #a9873a);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour donner un effet 3D */
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Effet de survol */
+}
+#btn-inscription:hover {
+    background: linear-gradient(45deg, #a9873a, #e4b646, #e3c364);
+}
+.img {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
